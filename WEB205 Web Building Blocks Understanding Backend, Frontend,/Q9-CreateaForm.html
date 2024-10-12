@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Feedback-form</h1>
+  <div class="feedback-form">
+  <form action="#" method="post">
+    <label for="feedback-type">feedback-type</label>
+    <br>
+    <select name="feedback-type" id="feedback-type" required >
+      <option value="">type</option>
+      
+      <option value="Technical">Technical</option>
+      <option value="Non-Technical">Non-Technical</option>
+      <option value="other">other</option>
+      
+      </select><br>
+      
+    <label for="message">message:</label><br>
+    <textarea name="message" id="message" required></textarea>
+    <fieldset>
+    <legend>Website Rating</legend>
+    <input type="radio" id="excellent" name="rating" value="excellent">
+    <label for="excellent">excellent</label>
+    <input type="radio" id="good" name="rating" value="good">
+    <label for="good">good</label>
+    <input type="radio" id="average" name="rating" value="average">
+    <label for="average">average</label>
+    <input type="radio" id="poor" name="rating" value="poor">
+    <label for="poor">poor</label>
+    </fieldset>
+    <label for="age">age (10-100)</label>
+    <br>
+    <input type="number" id="age"  min="10" max="100" required>
+    <br>
+    <label for="email ">Email *</label>
+    <br>
+    <input type="email" id="email" required>
+    <br>
+    <label for="password">Password *</label>
+    <br>
+    <input type="password" id="password" required minlength="8"><br>
+    <label for="url"> Website-Url (optional)</label><br>
+    <input type="url"  id="url" >
+    <br>
+    <div>
+    <input type="checkbox" id="term" required>
+    <label for="term">I agree for the terms and condtions</label>
+  </div>
+  <br/>
+  <button type="submit" class="submit-button" >Submit</button>
+   
+
+    
+  </form>
+</div>
+</body>
+</html>
