@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create a table</title>
+    <style>
+        table {
+            border: 2px;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 5px 75px 5px 15px;
+            border: 2px;
+            background-color: rgb(168, 172, 168);
+            color: black;
+            border-style: solid;
+            font-style: italic;
+        }
+
+        td {
+            padding: 10px 75px 10px 40px;
+            border: 2px;
+            border-style: solid;
+        }
+
+        /* Multiples of 3 (3rd, 6th, 9th, etc.) rows should be bold and green */
+        #table1 tr:nth-child(3n+1) { /* +2 accounts for the header row */
+            font-weight: bold;
+            color: rgb(53, 132, 75);
+        }
+
+        /* Multiples of 4 + 1 (1st, 5th, 9th, etc.) rows should be italic with font-size 30px */
+        #table1 tr:nth-child(4n+2) { /* +2 accounts for the header row */
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        .sum {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <tr class="Header">
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price per Unit</th>
+        </tr>
+        
+        <tr class="detail">
+            <td>Product 1</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 2</td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 3</td>
+            <td>3</td>
+            <td>20</td>
+        </tr>
+        
+        <tr class="detail">
+            <td>Product 4</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 5</td>
+            <td>5</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 6</td>
+            <td>6</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 7</td>
+            <td>7</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 8</td>
+            <td>8</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 9</td>
+            <td>9</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="detail">
+            <td>Product 10</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+
+        <tr class="sum">
+            <td colspan="2">Sum</td>
+            <td>$80</td>
+        </tr>
+    </table>
+</body>
+</html>

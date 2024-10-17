@@ -1,156 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umso</title>
-   <style>
-    body {
-        background-color: black;
-        color:white;
-    }
-    #navbar {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 15px;
-        align-items: center;
-       padding-bottom: 15px;
-        background-color: transparent
-    }
-    
-    #navbar img {
-        width:140px;
-        height:30px;
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 15px;
+            align-items: center;
+            padding-bottom: 15px;
+            background-color: transparent;
+        }
+
+        #navbar img {
+            width: 140px;
+            height: 30px;
+        }
+
+        #navbar div {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        #navbar div p {
+            padding: 0 10px;
+        }
+
+        #navbar div button {
+            padding: 0 15px 0 10px;
+            margin-right: 10px;
+            margin-top: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            background-color: transparent;
+            color: aliceblue;
+            font-weight: bold;
+            opacity: 95%;
+            border-radius: 10px;
+        }
+
+        #details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+
+        #details p {
+            font-size: 50px;
+            font-weight: bolder;
+            margin: 15px 0;
+        }
+
+        #details p:nth-child(2) {
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        #details p:nth-child(4) {
+            color: rgb(168, 165, 171);
+            opacity: 80%;
+            font-size: medium;
+            font-weight: small;
+        }
         
-    }
-    #navbar div {
-        display:flex;
-        margin-right: 10px;
-    }
+        #details div {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+        }
 
-    #navbar div p{
-        padding: 0 10px 0 10px;
-    }
+        #details input {
+            flex:1;
+            height: 50px;
+            border: 1px solid;
+            border-radius: 10px;
+            padding-left: 10px;
+            box-shadow: rgba(71, 38, 200, 0.4) 5px 5px 5px 5px, rgba(74, 52, 66, 0.3) 10px 10px 10px 10px;
+        }
 
-    #navbar div button{
-        padding: 0 15px 0 10px;
-        margin-right: 10px;
-        margin-top: 6px;
-        border:1px solid  rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;   
-        background-color: transparent;
-        color: aliceblue; 
-        font-weight: bold;
-        opacity: 95%;
-        border-radius: 10px;
+        #details div button {
+            width: 80px;
+            height: 45px;
+            border-radius: 10px;
+            background-color: blueviolet;
+            color: azure;
+            font-weight: bold;
+            border: none;
+            position: relative;
+            right: 90px;
+            
+        }
 
-    }
-/* ///////////////////////////////////////////// */
+        #details footer {
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+        }
 
-    #details {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: baseline;
-        border:0px solid rgb(18, 17, 17);
-          margin-left: 20%; 
-          margin-right: 20%; 
-          align-items: center;
-        
-        font-family:Arial, Helvetica, sans-serif;
-    }
+        #details footer p {
+            display: inline;
+            font-size: small;
+            opacity: 70%;
+        }
 
-    #details p:nth-child(1){
-        font-size: 50px;
-       
-        font-weight: bolder;
-    }
-    #details p:nth-child(2){
-       
-        
-        font-size: 50px;
-        color: blueviolet;
-        font-weight: bold;
-    }
+        #details footer img {
+            width: 120px;
+            height: 15px;
+            margin-left: 10px;
+        }
 
-    #details p:nth-child(3){
-      
-       
-        font-size: 50px;
-        font-weight: bolder;
-    }
+        footer {
+            display: flex;
+        }
 
-    #details p:nth-child(4){
-       
-       font-size:medium;
-       opacity: 50%;
-        font-weight:400;
-    }
-
-    #details div {
-        display: block;
-        position :relative;
-        margin-left:20%
-    }
-    #details input {
-        width:550px;
-        height:50px;
-        border:1px solid ;
-        border-radius: 10px;
-        padding-left: 10px;
-        box-shadow: rgba(71, 38, 200, 0.4) 5px 5px  5px 5px, rgba(74, 52, 66, 0.3) 10px 10px 10px 10px;
-        
-
-    }
-    
-    #details div button {
-        width:100px;
-        height:45px;
-        border-radius: 10px;
-        background-color: blueviolet;
-        color: azure;
-        font-weight: bold;
-        position: relative;
-        right:120px;
-        
-    }
-
-    #details div button::after {
-    content: url("https://cdn-icons-png.flaticon.com/128/616/616493.png");
-    display: inline-block;
-    transform: scale(0.1);
-   
-    position: absolute;
-    left:19px;
-    bottom:-40px;
-}
-
-    #details footer p {
-        display: inline;
-        font-size: small;
-       opacity: 70%;
-      
-    }
-
-    #details footer img {
-        width:150px;
-        height:15px
-    }
-
-footer {
-    display: flex;
-}
+        footer button {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <nav id="navbar">
-        
         <img src="https://www.umso.fr/lib_LUGoPiqXXlDptSWA/csi5g5qmp4uscbth.png?w=200&h=40&dpr=2" alt="logo">
         <div class="right">
-        <p>Pricing</p>
-        <p>Features</p>
-        <p>Showcase</p>
-        <button >Login</button>
-        <button>Sign Up-></button>
+            <p>Pricing</p>
+            <p>Features</p>
+            <p>Showcase</p>
+            <button>Login</button>
+            <button>Sign Up-></button>
         </div>
     </nav>
     <div id="details">
@@ -160,16 +148,15 @@ footer {
         <p>Give it a try right below, without having to sign up!</p>
         <br/>
         <div>
-        <input type="text" placeholder="Vegan Pizza Restaurant in">
-        <button>Generate</button><br/>
+            <input type="text" placeholder="Vegan Pizza Restaurant in">
+            <button>Generate</button>
         </div>
         <footer>
-        <p>Excellent</p>
-        <img src="https://www.pngmart.com/files/7/Rating-Star-PNG-Clipart.png" alt="rate"/>
-        <span>4.8 out of 5 based on 85 reviews</span>
+            <p>Excellent</p>
+            <img src="https://www.pngmart.com/files/7/Rating-Star-PNG-Clipart.png" alt="rate"/>
+            <span>4.8 out of 5 based on 85 reviews</span>
             <button>Trustpilot</button>
         </footer>
     </div>
-    
 </body>
 </html>
