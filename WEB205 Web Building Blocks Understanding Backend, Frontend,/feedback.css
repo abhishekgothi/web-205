@@ -1,0 +1,84 @@
+
+body {
+   display: flex;
+    font-family: Arial, sans-serif;
+    background-color: rgb(195, 58, 58); /* Body का बैकग्राउंड रंग */
+  }
+
+  #feedback-form {
+  
+    width: auto;
+    height: auto;
+    background-color: rgb(196, 183, 183);
+    padding: 20px;
+    box-shadow: 0 15px 300px rgba(20, 136, 208, 0.7);
+    margin: 50px auto;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 0%;
+    display: block;
+  }
+  
+  textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="number"],
+  select {
+    width: calc(100% - 22px); 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .rating{
+    display: flex;
+    text-align: center;
+    justify-content:space-evenly;
+    margin-bottom: 10px;
+    border: none; 
+    padding: 0; 
+  }
+  
+  input[type="radio"] {
+    margin-top: 5px;
+
+  }
+  
+  input[type="radio"]:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: darkgreen;
+  }
+
+  #message {
+   padding: 50px 250px 50px 10px;
+  }

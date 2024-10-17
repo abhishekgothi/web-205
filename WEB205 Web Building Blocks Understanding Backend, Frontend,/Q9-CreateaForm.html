@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <link rel="stylesheet" href="feedback.css">
+
+
+
+
 </head>
-<body>
-    <h1>Feedback-form</h1>
-  <div class="feedback-form">
+<body style="background-color: rgb(224, 40, 40);">
+
+    
+    <div id="feedback-form">
+        <h1 style="background-color: rgb(164, 156, 156); margin:0px 100px 0px 100px; text-shadow: 0 15px 100px rgba(44, 23, 23, 0.7);">Feedback-form</h1>
+         
+  <br/>
   <form action="#" method="post">
     <label for="feedback-type">feedback-type</label>
     <br>
@@ -20,10 +29,11 @@
       
       </select><br>
       
-    <label for="message">message:</label><br>
-    <textarea name="message" id="message" required></textarea>
-    <fieldset>
-    <legend>Website Rating</legend>
+    <label for="message">Message:</label><br>
+    <input name="message" id="message" required></input>
+    <label>Rating :</label>
+    <div class="rating">
+    <!-- -->
     <input type="radio" id="excellent" name="rating" value="excellent">
     <label for="excellent">excellent</label>
     <input type="radio" id="good" name="rating" value="good">
@@ -32,7 +42,7 @@
     <label for="average">average</label>
     <input type="radio" id="poor" name="rating" value="poor">
     <label for="poor">poor</label>
-    </fieldset>
+    </div>
     <label for="age">age (10-100)</label>
     <br>
     <input type="number" id="age"  min="10" max="100" required>
@@ -52,10 +62,7 @@
     <label for="term">I agree for the terms and condtions</label>
   </div>
   <br/>
-  <button type="submit" class="submit-button" >Submit</button>
-   
-
-    
+  <button type="submit" class="submit-button" >Submit</button>    
   </form>
 </div>
 </body>
