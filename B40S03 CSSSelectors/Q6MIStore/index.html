@@ -1,0 +1,262 @@
+
+<html>
+    <head>
+        <title>Mi Store</title>
+        <style>
+            /* General body styles */
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Navbar styles */
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                padding: 0 20px;
+                background-color: white;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Left section styles */
+            nav .left {
+                display: flex;
+                align-items: center;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
+            .left div {
+                margin: 0 15px;
+                color: #333;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .left div:first-child {
+                color: orangered;
+                font-size: 1.2em;
+            }
+
+            .left div:hover {
+                color: orangered;
+            }
+
+            /* Right section styles */
+            nav .right {
+                display: flex;
+                align-items: center;
+            }
+
+            .right div {
+                margin: 0 15px;
+                color: #333;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .right div:hover {
+                color: orangered;
+            }
+
+            .right img {
+                width: 25px;
+                height: 25px;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+
+            /* Grid container for items */
+            #items {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                padding: 40px 150px;
+                height:500px;
+               
+            }
+
+            /* Each product item styles */
+            #items div {
+                border: 1px solid #ccc;
+                padding: 20px ;
+                /* text-align: ; */
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                
+            }
+
+            #items div h5 {
+                margin: 10px 0;
+                font-size: 1.1em;
+            }
+
+            /* Discount and price styles */
+            .discount {
+                color: orangered;
+                font-weight: bold;
+                font-size: 1em;
+            }
+
+            .Mrp {
+                
+                margin: 5px 0;
+                font-size: 0.9em;
+            }
+
+            .price {
+
+                position:relative;
+                top:90px;
+                font-size: 0.9em;
+                
+            }
+
+           
+
+            #items img {
+                width: 100px;
+                height: 100px;
+                margin-top: 10px;
+                position: relative;
+                bottom: 35px ;
+                left: 105px;
+                
+                
+            }
+
+            /* Style for the special offer section */
+            /* #items div:last-child */
+            .palate { 
+                background-image: url("https://i03.appmifile.com/101_operator_in/09/10/2024/59e4c2ec68081bce1457b1058db88314.png?thumb=1&w=2560&f=webp&q=85");
+                background-size:contain;
+                grid-column: span 4;
+                background-color: rgb(183, 79, 79);
+                color: rgb(28, 27, 27);
+                text-align: center;
+                font-size: 1.2em;
+                padding: 40px;
+                height: 150px;
+                
+            }
+
+            .palate button {
+                padding: 10px 20px;
+                background-color:  #d4a475;
+                color: rgb(64, 64, 114);
+                border: none;
+                font-size: 1.2em;
+                cursor: pointer;
+                border-radius: 5px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position:relative;
+                top:120px;
+                left: 70px;
+
+
+            }
+
+            .palate button:hover {
+                background-color: #ffdab5;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img class='logo' src="https://up.yimg.com/ib/th?id=OIP.T5kwks5b62SA10Dx4ln4ZQHaHa&pid=Api&rs=1&c=1&qlt=95&w=119&h=119" alt="logo">
+                <div>Store</div>
+                <div>Phone</div>
+                <div>TV & Smart Home</div>
+                <div>Tablet</div>
+                <div>LifeStyle</div>
+            </div>
+            <div class="right">
+                <div>Discover</div>
+                <div>Support</div>
+                <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" alt="search">
+                <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png" alt="cart">
+                <img src="https://img.icons8.com/material-outlined/24/000000/user--v1.png" alt="profile">
+            </div>
+        </nav>
+        <div id="items">
+            <div>
+                <h5>Redmi Earphone</h5>
+                <span class="discount">25% off</span><br/>
+                <span class="price">₹449</span><br/>
+                <span class="Mrp"><strike>₹599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Redmi Earphone">
+            </div>
+
+            <div>
+                <h5>Mivi Earphone</h5>
+                <span class="discount">25% off</span><br/>
+                <span class="price">₹449</span><br/>
+                <span class="Mrp"><strike>₹599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Mivi Earphone">
+            </div>
+
+            <div>
+                <h5>Redmi Sonic Earphone</h5>
+                <span class="discount">45% off</span><br/>
+                <span class="price">₹449</span><br/>
+                <span class="Mrp"><strike>₹599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Redmi Sonic Earphone">
+            </div>
+
+            <div>
+                <h5>Mi Bluetooth Speaker</h5>
+                <span class="discount">55% off</span><br/>
+                <span class="price">₹449</span><br/>
+                <span class="Mrp"><strike>₹599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Mi Bluetooth Speaker">
+            </div>
+
+            <div class="palate">
+                <!-- <p>Save Up to 65% On Chargers & Cables</p>
+                <p>Free Delivery on All Products</p> -->
+                <button>Buy Now</button>
+            </div>
+
+            <div>
+                <h5>Redmi Earphone</h5>
+                <span class="discount">0% off</span><br/>
+                <span class="price">₹599</span><br/>
+                <span class="Mrp"><strike>₹599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Redmi Earphone">
+            </div>
+
+            <div>
+                <h5>Mivi Earphone</h5>
+                <span class="discount">45% off</span><br/>
+                <span class="price">₹149</span><br/>
+                <span class="Mrp"><strike>₹299</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Mivi Earphone">
+            </div>
+
+            <div>
+                <h5>Redmi Sonic Earphone</h5>
+                <span class="discount">25% off</span><br/>
+                <span class="price">₹4249</span><br/>
+                <span class="Mrp"><strike>₹5299</strike></span>
+                <img src="https://i03.appmifile.com/9_item_in/01/08/2023/5b55c8858a7f2107e20d448e280e6357.jpg?thumb=1&w=200&f=webp&q=85" alt="Redmi Sonic Earphone">
+            </div>
+
+            <div>
+                <h5>Mi Bluetooth Speaker</h5>
+                <span class="discount">50% off</span><br/>
+                <span class="price">₹2249</span><br/>
+                <span class="Mrp"><strike>₹5599</strike></span>
+                <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1617825722.98226831.png?thumb=1&w=200&f=webp&q=85" alt="Mi Bluetooth Speaker">
+            </div>
+        </div>
+    </body>
+</html>

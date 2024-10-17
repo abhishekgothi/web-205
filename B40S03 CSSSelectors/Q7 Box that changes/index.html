@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Box that changes Shape</title>
+    </head>
+
+    <style>
+        #container {
+            display: flex;
+            border:1px solid black;
+        }
+
+        #container div {
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        #container div:nth-child(1) {
+            background-color: blue;
+        }
+
+        #container div:nth-child(2) {
+            background-color: rgb(82, 139, 35);
+        }
+        #container div:nth-child(3) {
+            background-color: violet;
+        }
+        #container div:nth-child(4) {
+            background-color: rgb(138, 31, 36);
+        }
+        #container div:nth-child(5) {
+            background-color: rgb(36, 141, 76);
+        }
+
+        #container div:nth-child(3):hover {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(18, 202, 226);
+        }
+    </style>
+    <body>
+        <div id="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </body>
+</html>
